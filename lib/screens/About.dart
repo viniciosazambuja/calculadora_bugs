@@ -9,14 +9,14 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Em construção"),
+        title: Text("Sobre"),
       ),
       drawer: Menu(context),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Em construção'),
+            Text('Código utilizado na matéria de Manutenção de Software para realizar a correção de bugs.'),
           ],
         ),
       ),

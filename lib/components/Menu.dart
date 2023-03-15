@@ -1,6 +1,9 @@
 
 import 'package:flutter/material.dart';
 
+import '../screens/About.dart';
+import '../screens/Calculator.dart';
+
 Widget Menu(BuildContext context){
   return Drawer(
       child: ListView(
@@ -19,37 +22,29 @@ Widget Menu(BuildContext context){
               ),
               accountName: new Container(
                   child: Text(
-                    'Roubei o codigo',
+                    'Vagner Mancini',
                     style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                   )),
               accountEmail: new Container(
                   child: Text(
-                    'pegueisempedir@git.com',
+                    'Vagner Mancini@git.com',
                     style: TextStyle(color: Colors.white),
                   )),
             ),
             ListTile(
-              title: Text("lorem"),
+              title: Text("Calculadora"),
               onTap: (){
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => Home()),);
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Calculator()),);
               },
             ),
             ListTile(
-              title: Text("item"),
+              title: Text("About"),
               onTap: (){
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => Calculator()),);
-              },
-            ),
-            ListTile(
-              title: Text(""),
-              onTap: (){
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => About()),);
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => About()),);
               },
             ),
           ]

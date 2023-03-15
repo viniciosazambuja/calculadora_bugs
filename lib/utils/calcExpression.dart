@@ -10,17 +10,17 @@ calcExpression(String expression){
 
   characters = operatorsOfExpression(expression);
 
-  double total = 1;
+  double total = 0;
   int currentCharacter = 0;
 
-  total = calcWithOperator(numbers[0], numbers[1]-1, characters[currentCharacter]);
+  total = calcWithOperator(numbers[0], numbers[1], characters[currentCharacter]);
   characters.removeAt(0);
 
   for(int i = 2 ; i <= numbers.length; i++ ) {
 
     if(characters.isEmpty) break;
 
-    total = calcWithOperator(total, numbers[i]+1, characters[0]);
+    total = calcWithOperator(total, numbers[i], characters[0]);
     characters.removeAt(0);
   }
 
